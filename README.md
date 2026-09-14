@@ -1,90 +1,47 @@
-<a href="https://jekyll-themes.com">
-<img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
+# Taejun Yoon's personal website
 
-# Orbit
-> This theme is designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
-> Visit [her website](http://themes.3rdwavemedia.com/) for more themes.
+A minimal, responsive academic homepage at <https://ytj0604.github.io/>.
+The current site uses plain HTML and CSS, a dark palette, and the visitor's
+system font. It requires no JavaScript, third-party requests, or build tools.
 
-I have made this into a Jekyll Theme. Checkout the live demo [here](https://online-cv.webjeda.com).
+## Preview locally
 
-<table>
-  <tr>
-    <th>Desktop</th>
-    <th>Mobile</th>
-  </tr>
-  <tr>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/desktop.png?raw=true" width="600"/>
-    </td>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/mobile.png?raw=true" width="250"/>
-    </td>
-  </tr>
-</table>
-
-## Installation
-
-* [Fork](https://github.com/sharu725/online-cv/fork) the repository;
-* Go to settings and set master branch as Github Pages source;
-* Your new site should be ready at `https://<username>.github.io/online-cv/`;
-* Printable version of the site can be found at `https://<username>.github.io/online-cv/print`. Use a third party link https://pdflayer.com/, https://www.web2pdfconvert.com/ etc to get the printable PDF.
-
-Change all the details from one place: `_data/data.yml`.
-
-### To preview/edit locally with docker
+From the repository root:
 
 ```sh
-docker-compose up
+python3 -m http.server 4000 --bind 127.0.0.1
 ```
 
-*docker-compose.yml* file is used to create a container that is reachable under <http://localhost:4000>.
-Changes *_data/data.yml* will be visible after a while.
+Open <http://localhost:4000>. Use the browser's Print command for the light,
+print-friendly layout. The previous `/print` and `/print.html` routes redirect
+to the homepage.
 
-### Local machine
+## Editing
 
-* Get the repo into your machine 
+- `index.html`: biography, contact links, publications, education, experience,
+  teaching, and languages. Publication details come from the site owner;
+  add a paper/DOI link when its public URL is available.
+- `assets/css/site.css`: layout, colors, responsive breakpoints, and print styles.
+- `assets/images/profile.png`: the owner's existing portrait, unchanged.
+- `assets/favicon.svg`: original vector monogram.
 
-```bash
-git clone https://github.com/sharu725/online-cv.git
-```
+The `.nojekyll` file tells GitHub Pages to serve the static files directly.
+Publish through the repository's existing GitHub Pages branch configuration.
+No dependency installation or bundler is needed.
 
-* Install required ruby gems
+## Design and attribution
 
-```bash
-bundle install
-```
+The renewed HTML, CSS, and monogram were written specifically for this site.
+Sangoh Lee's and Sungho Park's homepages informed the broad dark academic-page
+direction; none of their code, text, images, fonts, or other assets were copied.
+Fonts are resolved locally (`-apple-system`, `BlinkMacSystemFont`, `Segoe UI`,
+`Helvetica Neue`, Arial, sans-serif); no Apple font files are redistributed.
 
-* Serve the site locally
-
-```bash
-bundle exec jekyll serve
-```
-
-* Navigate to `http://localhost:4000`
-
-
-## Skins
-
-There are 6 color schemes available:
-
-| Blue | Turquoise | Green |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/blue.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/turquoise.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/green.jpg" width="300"/> |
-
-| Berry | Orange | Ceramic |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/berry.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/orange.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/ceramic.jpg" width="300"/> |
-
-## Credits
-
-Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=nelsonmestevao).
-
-Thanks to [t-h-e(sfrost)](https://github.com/t-h-e) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=t-h-e).
-
-Check out for more themes: [**Jekyll Themes**](http://jekyll-themes.com).
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=sharu725/online-cv&type=Date)](https://star-history.com/#sharu725/online-cv&Date)
-
+The repository historically used the Orbit template by Xiaoying Riley at
+[3rd Wave Media](https://themes.3rdwavemedia.com/), adapted to Jekyll by
+[webjeda / sharu725](https://github.com/sharu725/online-cv).
+Legacy `_layouts`, `_includes`, `_sass`, `_data`, Ruby configuration, and
+vendor assets remain for provenance. They are not used by the renewed homepage.
+Their original attribution and embedded license notices remain intact.
+The new design does not load the old theme, analytics, Bootstrap, jQuery,
+Font Awesome, or externally hosted fonts.

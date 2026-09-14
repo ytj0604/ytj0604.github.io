@@ -1,23 +1,130 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#09090b">
+  <title>Taejun Yoon · POSTECH</title>
+  <meta name="description" content="Taejun Yoon is a Ph.D. student at POSTECH's Data Systems Lab, interested in LLM inference optimization, sparse attention, and cloud data systems.">
+  <link rel="canonical" href="https://ytj0604.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Taejun Yoon · POSTECH">
+  <meta property="og:description" content="Ph.D. student at POSTECH. LLM inference optimization, sparse attention, and cloud data systems.">
+  <meta property="og:url" content="https://ytj0604.github.io/">
+  <meta property="og:image" content="https://ytj0604.github.io/assets/images/profile.png">
+  <meta property="og:image:alt" content="Portrait of Taejun Yoon">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="Taejun Yoon, back to top">TY<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#background">Background</a>
+        <a href="#teaching">Teaching</a>
+      </nav>
+    </div>
+  </header>
 
+  <main id="main" class="page">
+    <section class="hero" aria-labelledby="name">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Ph.D. student · POSTECH</p>
+        <h1 id="name">Taejun Yoon<span class="name-dot" aria-hidden="true">.</span></h1>
+        <p class="korean-name" lang="ko">윤태준</p>
+        <p class="hero-description">Exploring efficient AI<br>and data systems.</p>
+        <div class="contact-links" aria-label="Contact links">
+          <a class="contact-link" href="mailto:tjyoon@dblab.postech.ac.kr">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+            Email <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-link" href="https://github.com/ytj0604">GitHub <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="contact-link" href="https://dslab.postech.ac.kr/">Data Systems Lab <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="assets/images/profile.png" width="413" height="531" alt="Portrait of Taejun Yoon" fetchpriority="high">
+        <figcaption>POSTECH · Pohang, South Korea</figcaption>
+      </figure>
+    </section>
 
-{% include career-profile.html %}
+    <section id="about" class="section-row" aria-labelledby="about-heading">
+      <div class="section-label"><span class="section-number" aria-hidden="true">01</span><h2 id="about-heading">About</h2></div>
+      <div class="section-content about-copy">
+        <p>I am a Ph.D. student in the <a href="https://dslab.postech.ac.kr/">Data Systems Lab</a> at <a href="https://www.postech.ac.kr/eng/">POSTECH</a>, advised by <a href="https://wscrony.github.io/">Prof. Wook-Shin Han</a>.</p>
+        <p>My research interests include <strong>LLM inference optimization</strong> and <strong>sparse attention</strong>, with a broader interest in efficient cloud data systems.</p>
+        <ul class="interests" aria-label="Research interests">
+          <li>LLM inference optimization</li><li>Sparse attention</li><li>Cloud data systems</li>
+        </ul>
+      </div>
+    </section>
 
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
+    <section id="publications" class="section-row" aria-labelledby="publications-heading">
+      <div class="section-label"><span class="section-number" aria-hidden="true">02</span><h2 id="publications-heading">Publications</h2></div>
+      <div class="section-content">
+        <article class="publication" aria-labelledby="cache-paper-title">
+          <div class="publication-meta"><span class="venue">SIGMOD 2027</span></div>
+          <h3 id="cache-paper-title">Cache Replacement in Direct-Access Cloud OLAP—An Experimental Comparison and Practical Guidance: <span class="paper-track">[Experiments &amp; Analysis]</span></h3>
+          <p class="authors"><strong>Taejun Yoon</strong>, Taesung Lee, Joo Yeon Lee, Ki Hong Kim, Byungchul Tak, <strong>Wook-Shin Han</strong></p>
+        </article>
+      </div>
+    </section>
 
-{% include experiences.html %}
+    <section id="background" class="section-row" aria-labelledby="background-heading">
+      <div class="section-label"><span class="section-number" aria-hidden="true">03</span><h2 id="background-heading">Background</h2></div>
+      <div class="section-content">
+        <div class="history-group">
+          <h3 class="subheading">Education</h3>
+          <div class="history-entry">
+            <div>
+              <h4>B.S. in Computer Science and Engineering</h4>
+              <p>Pohang University of Science and Technology <span class="nowrap">(POSTECH)</span></p>
+              <p class="detail">GPA <span class="gpa">4.07 / 4.3</span></p>
+            </div>
+            <p class="date">Feb 2020 – Feb 2024</p>
+          </div>
+        </div>
+        <div class="history-group">
+          <h3 class="subheading">Experience</h3>
+          <div class="history-entry">
+            <div><h4>Research Intern</h4><p>POSTECH Data Systems Lab</p></div>
+            <p class="date">Jun 2022 – Feb 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-{% include certifications.html %}
+    <section id="teaching" class="section-row" aria-labelledby="teaching-heading">
+      <div class="section-label"><span class="section-number" aria-hidden="true">04</span><h2 id="teaching-heading">Teaching</h2></div>
+      <div class="section-content teaching-list">
+        <article class="teaching-entry">
+          <div><p class="course-code">CSED321</p><h3>Programming Language</h3><p class="detail">Teaching Assistant</p></div>
+          <p class="date">2026</p>
+        </article>
+        <article class="teaching-entry">
+          <div><p class="course-code">CSED421</p><h3>Database System</h3><p class="detail">Teaching Assistant</p></div>
+          <p class="date">2024</p>
+        </article>
+      </div>
+    </section>
 
-{% include projects.html %}
+    <section class="section-row languages-row" aria-labelledby="languages-heading">
+      <div class="section-label"><span class="section-number" aria-hidden="true">05</span><h2 id="languages-heading">Languages</h2></div>
+      <ul class="section-content languages">
+        <li><span>Korean</span><span class="detail">Native</span></li>
+        <li><span>English</span><span class="detail">Professional</span></li>
+      </ul>
+    </section>
 
-{% include oss-contributions.html %}
-
-{% include publications.html %}
-
-{% include skills.html %}
-
+    <footer class="site-footer">
+      <div><p class="footer-name">Taejun Yoon</p><a href="mailto:tjyoon@dblab.postech.ac.kr">tjyoon@dblab.postech.ac.kr</a></div>
+      <div class="footer-end"><p>© 2026 Taejun Yoon</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div>
+    </footer>
+  </main>
+</body>
+</html>
