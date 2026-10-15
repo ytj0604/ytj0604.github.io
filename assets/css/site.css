@@ -111,6 +111,7 @@ h1 { font-size: clamp(44px, 6.2vw, 76px); font-weight: 600; letter-spacing: -.04
   h1 { font-size: clamp(32px, 7.8vw, 48px); letter-spacing: -.06em; white-space: nowrap; }
   .korean-name { font-size: 13px; margin-top: 8px; }
   .hero-description { margin-top: 23px; font-size: 19px; }
+  .hero-description br { display: none; }
   .portrait { margin-top: 1px; }
   .portrait img { width: 96px; height: 124px; border-radius: 10px; }
   .portrait figcaption { display: none; }
